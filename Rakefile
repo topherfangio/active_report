@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "active_report"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{ActiveReport enables you to easily generate reports.}
     gem.email = "fangiotophia@gmail.com"
     gem.homepage = "http://github.com/topherfangio/active_report"
     gem.authors = ["Topher Fangio"]
@@ -49,7 +49,8 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "active_report #{version}"
+  rdoc.title = "ActiveReport #{version}"
+	rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

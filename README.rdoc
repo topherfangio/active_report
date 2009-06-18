@@ -1,7 +1,32 @@
-= active_report
+= ActiveReport
 
-Description goes here.
+ActiveReport is a gem designed to assist you in creating reports. Currently is supports
+HTML and CSV reports through an intuitive interface.
+
+== Generators
+
+Generators are included to create all neccessary files.
+
+To create a new report, run the following command:
+
+  ruby script/generate active_report UserReport
+
+You also need to generate the default ActiveReportController which your report controllers
+will extend:
+
+  ruby script/generate active_report_controller
+
+If this file already exists, it will ask if you wish to overwrite it.
+
+After running the two previous commands, and starting/restarting your web server (so that
+it rereads routes.rb), you should be able to go to http://localhost/user_reports/ and see
+a basic form containing a submit button that says "Generate". Clicking this button will
+return you to the "new" page since no data was submitted. Currently you cannot submit an
+empty report, which turns out to be a bad thing, so this is considered a bug and will be
+fixed in a later release.
+
+Check out the rdoc for more information on how to use the models.
 
 == Copyright
 
-Copyright (c) 2009 Topher Fangio. See LICENSE for details.
+Copyright (c) 2009 Topher Fangio. See MIT-LICENSE for details.
