@@ -1,4 +1,4 @@
-= ActiveReport
+= active_report
 
 ActiveReport is a gem designed to assist you in creating reports. Currently is supports
 HTML and CSV reports through an intuitive interface.
@@ -19,7 +19,7 @@ will extend:
 If this file already exists, it will ask if you wish to overwrite it.
 
 After running the two previous commands, and starting/restarting your web server (so that
-it rereads routes.rb), you should be able to go to http://localhost/user_reports/ and see
+it rereads routes.rb), you should be able to go to http://localhost/user_reports and see
 a basic form containing a submit button that says "Generate". Clicking this button will
 return you to the "new" page since no data was submitted. Currently you cannot submit an
 empty report, which turns out to be a bad thing, so this is considered a bug and will be
