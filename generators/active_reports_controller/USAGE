@@ -1,0 +1,16 @@
+Description:
+    Creates the file containing the base class that
+    all reports extend.
+
+Example:
+    `./script/generate active_reports_controller`
+
+    This will create:
+        app/controllers/active_reports_controller.rb
+        
+    If app/controllers/active_reports_controller.rb
+    exists, it will ask you whether or not you wish
+    to overwrite the file. Generally it is safest to
+    say no in case you have made any changes (such
+    as adding a `before_filter :require_admin` or
+    similar).

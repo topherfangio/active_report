@@ -1,0 +1,16 @@
+Description:
+    Creates all of the files neccessary to generate
+    a basic report and adds the appropriate route to
+    `routes.rb`. It does not create the base class
+    for the controllers, to do so, run the
+    active_reports_controller generator.
+
+Example:
+    `./script/generate active_report UserReport`
+
+    This will create:
+        app/controllers/user_reports_controller.rb
+        app/models/user_report.rb
+        app/view/user_reports
+        app/view/user_reports/create.html.erb
+        app/view/user_reports/new.html.erb

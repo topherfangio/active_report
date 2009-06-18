@@ -1,0 +1,9 @@
+<fieldset>
+  <legend>New <%= class_name.titleize %></legend>	
+  
+  <%% form_for @report do |f| %>
+    <%%= f.error_messages %>
+  
+	<%%= f.submit "Generate Report" %>
+  <%% end %>
+</fieldset>
